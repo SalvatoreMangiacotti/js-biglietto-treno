@@ -61,4 +61,6 @@ if (userAge < 18) {
 
 // Risultato, output
 
+// toFixed() max 2 cifre decimali
+totalPrice = totalPrice.toFixed(2);
 console.log(`Il costo totale del biglietto sarà di: ${totalPrice} €`);
