@@ -52,10 +52,15 @@ if (userAge < 18) {
     // Prezzo totale con sconto applicato
     totalPrice = ticketPrice - discount;
 
+} else {
+    
+    // Se l'utente ha una età compresa tra i 18 e i 65 anni non verrà applicato alcuno sconto
+    totalPrice = ticketPrice;
+
 }
 
 // Risultato, output
 
 // toFixed() max 2 cifre decimali
-
-console.log(`Il costo totale del biglietto sarà di: ${totalPrice.toFixed(2)} €`);
+totalPrice = totalPrice.toFixed(2);
+console.log(`Il costo totale del biglietto sarà di: ${totalPrice} €`);
